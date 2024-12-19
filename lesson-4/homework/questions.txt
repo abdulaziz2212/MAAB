@@ -1,0 +1,13 @@
+1.What is the difference between the continue and break statements in Python?
+Answer: The continue statement will just skip the current iteration and will run next iteration, but the break statement will exit the entire loop regardless.
+
+2. Can you explain the difference between for loop and while loop?
+Answer: The for loop iterates through the sequence but while loop will iterates until the specified condition is true
+3. How would you implement a nested for loop system? Provide an example
+Answer: Simple way is one loop is inside another:
+        for i in range(n):
+            for j in range(n);
+                pass
+        Or we may use list comprohension:
+        something=[j for i in range(n) for j in range(n)]
+
