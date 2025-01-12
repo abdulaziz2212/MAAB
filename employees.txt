@@ -1,0 +1,2 @@
+1004, Abdulaziz Tulaganov, ML engineer, 1500000
+1001, Abdulaziz, ML, 15000000
