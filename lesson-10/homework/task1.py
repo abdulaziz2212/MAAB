@@ -52,13 +52,13 @@ class Library:
         if title not in self.books:
             raise BookNotFoundException('Book is not found')     
         
-        elif self.books[title].is_borrowed == True:
+        if self.books[title].is_borrowed == True:
             raise BookAlreadyBorrowedException("Book is already by someone")
             
-        elif member_name not in self.members:
+        if member_name not in self.members:
             raise MemberNotFoundException("Member is not exist")
             
-        elif self.members[member_name].borrowed_books>=3:
+        if self.members[member_name].borrowed_books>=3:
             raise MemberLimitExceededException("Member's limit is full, you can only borrow 3 books")
 
         else:
@@ -70,7 +70,7 @@ class Library:
         if title not in self.books:
             raise BookNotFoundException('Book is not found')
             
-        elif member_name not in self.members:
+        if member_name not in self.members:
             raise MemberNotFoundException("Member is not exist")
         else:
             self.books[title].is_borrowed=False
