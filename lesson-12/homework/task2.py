@@ -8,9 +8,6 @@ load_dotenv()
 api_key = os.getenv("TMDB_API_KEY")
 BASE_URL = "https://api.themoviedb.org/3"
 
-api_key = 'a96e7b1b3b4ea5612a16b67490abeefd'  #API key
-BASE_URL = "https://api.themoviedb.org/3"
-
 
 def get_genres():  #getting list of all genres
     url = f"{BASE_URL}/genre/movie/list"
