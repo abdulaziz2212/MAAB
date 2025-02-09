@@ -53,7 +53,7 @@ def send_document(doc_path,message_id):
 
             files = {"document":document}
             response = requests.post(url, data=data, files=files)
-            print(f" document {response.json()}")
+            print(f"document {response.json()}")
             return response.json().get("ok", False)
     except Exception as e:
         print(f"Error sending document: {e}")
@@ -137,6 +137,7 @@ def process_books(directory_path):
 
             success=send_document(file_path,message_id)
             log_upload_status(filename, file_path, "Success" if success else "Failed - Telegram Error")
+
 
 
 # Run the process
